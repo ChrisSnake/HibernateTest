@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- letzter Teil: Tabellenname -->
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_owntest</property>
+		<!-- TODO change user / pw -->
+		<property name="hibernate.connection.username">user</property>
+		<property name="hibernate.connection.password">password</property>
+		<property name="hibernate.connection.pool_size">10</property>
+		<property name="show_sql">false</property>
+		<property name="format_sql">false</property>
+		<property name="use_sql_comments">false</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<property name="hbm2ddl.auto">create</property>
+		
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<mapping class="hibernate.Model" />
+
+	</session-factory>
+</hibernate-configuration>

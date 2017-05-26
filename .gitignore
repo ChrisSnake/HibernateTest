@@ -1,0 +1,15 @@
+**.class
+**/target/*
+**/bin/*
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
