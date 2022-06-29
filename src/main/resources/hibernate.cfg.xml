@@ -5,7 +5,7 @@
 
 <hibernate-configuration>
 	<session-factory>
-		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 		<!-- letzter Teil: Tabellenname -->
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_owntest</property>
 		<!-- TODO change user / pw -->
@@ -15,7 +15,7 @@
 		<property name="show_sql">false</property>
 		<property name="format_sql">false</property>
 		<property name="use_sql_comments">false</property>
-		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
 		
 		<property name="hbm2ddl.auto">create</property>
 		
